@@ -1,0 +1,116 @@
+/* Reset e ajustes gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #004080, #0059b3);
+    color: white;
+    padding: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    flex: 1;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 20px;
+    color: #004080;
+    font-size: 24px;
+    border-bottom: 3px solid #004080;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+p {
+    margin: 10px 0 20px;
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.image-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: linear-gradient(90deg, #004080, #0059b3);
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    margin-top: auto;
+    font-weight: bold;
+}
+
+/* Cores de Destaque */
+.red { color: #ff4d4d; font-weight: bold; }
+.green { color: #28a745; font-weight: bold; }
+.blue { color: #0073e6; font-weight: bold; }
+.cyan { color: #00bcd4; font-weight: bold; }
+.magenta { color: #e91e63; font-weight: bold; }
+.yellow { color: #ffeb3b; font-weight: bold; }
+.black { color: #333; font-weight: bold; }
+
+.bold-red { color: #ff4d4d; font-weight: bold; }
+.bold-cyan { color: #00bcd4; font-weight: bold; }
+
+/* Efeito para destacar informações importantes */
+.highlight {
+    background-color: #ffeb3b;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Ajuste para tornar tudo mais responsivo */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    img {
+        max-width: 45%;
+    }
+}
+ ul,li {
+    text-align: center;
+ }
